@@ -20,4 +20,13 @@
 --> >= greater than equal to 
 --> <= less than equal to 
 
+*note comparison operator always return boolean value
+
 #PYTHON LOGICAL OPERATOR
+logical AND
+logical OR
+logical NOT
+
+#python if-else statement
+         nested if-else statement
+         
