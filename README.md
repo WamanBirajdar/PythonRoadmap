@@ -1,6 +1,6 @@
 # PythonRoadmap
 
 ### python operators
---> Arithmetic operator
---> Logical operator
---> Comparison operator
+> Arithmetic operator
+> Logical operator
+> Comparison operator
