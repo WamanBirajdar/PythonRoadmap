@@ -7,9 +7,13 @@
 
 > Loops
 
-1.If_else Loop**
-2.While Loop**
++ If_else Loop
++ + While Loop
 
-Break,Continue,Pass Keywords
+> Keywords
+
++ Break
++ Continue
++ Pass
 
 
