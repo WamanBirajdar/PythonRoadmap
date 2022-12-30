@@ -8,7 +8,7 @@
 > Loops
 
 + If_else Loop
-+ + While Loop
++ While Loop
 
 > Keywords
 
