@@ -16,3 +16,23 @@ if __name__=="__main__":
         print("yes")
     else:
         print("no")
+        
+ #here w eare usnig hashing techniq to reduce time complexity and faster access
+#hashing its  process of mapping keys and values in hash table usinng hash function 
+
+def checkpair(arr,size,sum):
+    
+    #creating empty hash map and store indices 
+    hashmap={}
+    
+    for i in range(0,size):
+        temp=sum-arr[i]
+        if(temp in hashmap):
+            print("yes")
+            return 
+        hashmap[arr[i]]=i
+    print("no")
+
+arr=[0, -1, 2, -3, 1]
+sum=-2
+checkpair(arr,len(arr),sum)
