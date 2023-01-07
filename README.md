@@ -17,7 +17,10 @@
 + Pass
 
 > Python Data Structures
-+ List []
-+ Tuple ()
++ List 
++ Tuple 
++ Dictionary
++ Set
+
 
 
