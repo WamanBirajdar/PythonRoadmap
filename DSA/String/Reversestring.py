@@ -1,3 +1,32 @@
+# method I
+def reverstring(s):
+    new_list=[]
+    for word in s:
+        new_list.insert(0,word)
+    return new_list
+
+
+if __name__=='__main__':
+    s='my name is waman'
+    sl=s.split(' ')
+    result=reverstring(sl)
+    print(' '.join(result))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # revers words in given string
 '''
 Input: s = “geeks quiz practice code” 
