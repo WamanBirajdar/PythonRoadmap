@@ -276,3 +276,27 @@ s=son("wmaan",'balaji','Waaman')
 s.display()
 
 
+
+# hierarchical inheritance
+# more than one derived classes created from one base class
+# one parent class and two parent class
+
+
+class baap:
+    def fun(self):
+        print("ye mera beta hai")
+
+class child1(baap):
+    def fun2(self):
+        print("child 1")
+
+class child2(baap):
+    def fun(self):
+        print("child2")
+
+
+o1=child1()
+o1.fun()
+o1.fun2()
+
+
