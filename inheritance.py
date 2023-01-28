@@ -233,3 +233,46 @@ s.fathername = "RAM"
 s.mothername = "SITA"
 s.parents()
 
+
+# multilevel inheritance
+# features of base class and derived class are inherited into the new derived class
+# child and grandmother
+
+
+# base class
+class grandfather:
+
+    def __init__(self,grandfathername) -> None:
+        self.grandfathername=grandfathername
+
+
+# intermediate class
+class father(grandfather):
+    def __init__(self,fathername, grandfathername,) -> None:
+        
+        # invoking constructor of grandfather
+        super().__init__(grandfathername)
+        self.fathername=fathername
+
+
+#derived class
+
+
+class son(father):
+    def __init__(self, sonname,fathername, grandfathername) -> None:
+        super().__init__(fathername, grandfathername)
+        self.sonname=sonname
+
+    def display(self):
+        print("grandfather name",self.grandfathername)
+        print("father name",self.fathername)
+        print("sonname",self.sonname)
+
+
+# deriver code
+
+
+s=son("wmaan",'balaji','Waaman')
+s.display()
+
+
