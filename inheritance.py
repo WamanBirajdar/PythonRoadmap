@@ -143,3 +143,93 @@ class grandchild(child):
 
 g=grandchild('waman',23,'noida')
 print(g.getname(),g.gettage(),g.getaddress())
+
+
+
+# examples of inheritance 
+
+# example of single inheritance
+class base:
+    def __init__(self,name) -> None:
+        self.name=name
+
+
+    # get name 
+    def getname(self):
+        return self.name
+
+class child(base):
+    def __init__(self, name,age) -> None:
+        super().__init__(name)
+        self.age=age
+
+    # get age of person
+    def getage(self):
+        return self.age
+
+single_inheritance=child('waman',22)
+print(single_inheritance.getname(),single_inheritance.getage())
+
+
+# example of multiple inheritance
+# derived class inheritas from more than one base class
+
+# base class1
+class mother:
+    mothername=""
+
+    def mother(self):
+        print(self.mothername)
+
+# base class 2
+class father:
+    fathername=" "
+
+    def father(self):
+        print(self.fathername)
+
+# derived class
+
+class son(mother,father):
+    def parents(self):
+        print(self.mothername)
+        print(self.fathername)
+
+s=son()
+
+
+# Python program to demonstrate
+# multiple inheritance
+# derived class inherits properties and variables from more than one base class
+ 
+# Base class1
+class Mother:
+    mothername = ""
+ 
+    def mother(self):
+        print(self.mothername)
+ 
+# Base class2
+ 
+ 
+class Father:
+    fathername = ""
+ 
+    def father(self):
+        print(self.fathername)
+ 
+# Derived class
+ 
+ 
+class Son(Mother, Father):
+    def parents(self):
+        print("Father :", self.fathername)
+        print("Mother :", self.mothername)
+ 
+ 
+# Driver's code
+s1 = Son()
+s.fathername = "RAM"
+s.mothername = "SITA"
+s.parents()
+
